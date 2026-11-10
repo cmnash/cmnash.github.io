@@ -1,0 +1,343 @@
+/* =========================
+   General
+   ========================= */
+
+body {
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+
+/* =========================
+   Hero
+   ========================= */
+
+.hero {
+  min-height: 70vh;
+  padding: 12vh 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.52) 45%,
+      rgba(0, 0, 0, 0.10) 100%
+    ),
+    url("images/hero4.JPG");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.hero p {
+  max-width: 750px;
+  font-size: 1.25rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.hero h1,
+.hero h3,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.7rem 1.3rem;
+
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid white;
+  color: #111 !important;
+
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+
+  transition: all 0.2s ease;
+}
+
+.hero .btn:hover {
+  background: white;
+  color: #000 !important;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Research cards
+   ========================= */
+
+.grid {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.g-col-4 {
+  padding: 3rem;
+}
+
+.g-col-4 h3 {
+  margin-top: 0;
+}
+
+
+/* =========================
+   Images
+   ========================= */
+
+img {
+  border-radius: 4px;
+}
+
+figure {
+  margin-bottom: 2rem;
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn {
+  border-radius: 3px;
+  padding: 0.7rem 1.2rem;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.nav-footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 60vh;
+    padding: 8vh 7vw;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
+
+/* =========================
+   Fieldwork photo grid
+   ========================= */
+
+.photo-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin-top: 1.5rem;
+}
+
+.photo-grid > div {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.photo-grid a {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.photo-grid img {
+  display: block !important;
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.photo-grid img:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+
+/* Phone */
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .photo-grid img {
+    height: 200px !important;
+  }
+}
+
+
+/* =========================
+   Image spacing
+   ========================= */
+
+figure {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+/* Add breathing room around text next to images */
+.quarto-figure {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem
+}
+
+
+.columns {
+  gap: 10rem !important;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 60vh;
+    padding: 8vh 7vw;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    white-space: normal;
+  }
+
+  .hero h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* =========================
+   Current research features
+   ========================= */
+
+.research-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin: 3rem 0 5rem 0;
+}
+
+.research-feature-text {
+  padding: 0 1rem;
+}
+
+.research-feature-image {
+  width: 100%;
+}
+
+.research-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 6px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .research-feature {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .research-feature-text {
+    padding: 0;
+  }
+
+}
